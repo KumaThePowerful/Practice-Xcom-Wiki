@@ -9,8 +9,63 @@
 }
 
 /*GLOBAL*/
+.text-titillium{
+    font-family: 'Titillium Web', sans-serif;
+}
 
-/**/
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-size-24{
+    font-size: 24px;
+}
+
+.text-size{
+    font-size: 14px;
+}
+
+/*INDEX*/
 .bg-05111B {
     background-color: #05111B;
 }
+
+.bg-072D4F{
+    background-color: #072D4F;
+}
+
+.bg-040204{
+    background-color: #040204;
+}
+
+.border-5AFBFD{
+    border: 2px solid #5AFBFD;
+}
+
+.text-color-5AFBFD{
+    color: #5AFBFD;
+}
+
+.text-color-DBFFFF{
+    color: #DBFFFF;
+}
+
+.bg-index{
+    background-image: url('../img/bg-index.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.height-120{
+    height: 120px;
+}
+
+.height-500{
+    height: 500px;
+}
+
+.height-50{
+    height: 70px;
+}
+
