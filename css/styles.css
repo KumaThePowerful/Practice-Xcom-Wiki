@@ -1,0 +1,16 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap');
+
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*GLOBAL*/
+
+/**/
+.bg-05111B {
+    background-color: #05111B;
+}
