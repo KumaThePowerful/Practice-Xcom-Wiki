@@ -9,6 +9,10 @@
 }
 
 /*GLOBAL*/
+.width-80{
+    width: 80%;
+}
+
 .text-titillium {
     font-family: 'Titillium Web', sans-serif;
 }
@@ -73,9 +77,11 @@
     height: 500px;
 }
 
+p{
+    color: #DBFFFF;
+}
 
-
-/*PERSONAJES*/
+/*ENEMIGOS*/
 
 .bg-hologlobo {
     background-image: url('../img/bg-hologlobo.jpg');
@@ -84,7 +90,7 @@
 .container-grid-enemigos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.4fr 1.2fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -97,7 +103,7 @@
 
 .Fotos {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -174,4 +180,18 @@
 
 .Sectopodo {
     grid-area: Sectopodo;
+}
+
+/*PERSONAJES*/
+
+/*MOVIL*/
+
+@media (max-width:767px){
+    .movil-flex{
+        flex-direction: column;
+    }
+
+    .movil-height-{
+        height: 70px;
+    }
 }
