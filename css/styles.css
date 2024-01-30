@@ -63,6 +63,7 @@
     width: 100%;
 }
 
+
 /*INDEX*/
 
 .bg-index {
@@ -182,13 +183,24 @@ p{
     grid-area: Sectopodo;
 }
 
-/*PERSONAJES*/
+/*ITEMS*/
 
 /*MOVIL*/
 
 @media (max-width:767px){
     .movil-flex{
         flex-direction: column;
+    }
+
+    .movil-wrap{
+        flex-wrap: wrap;
+    }
+
+    .movil-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     .movil-height-{
