@@ -1,3 +1,15 @@
-.clase{
-    background-color: red;
+//Variables
+@import "./utilidades/variables";
+
+/*Reset*/
+@import "./componentes/reset";
+
+/*Texto */
+@import "./componentes/texto";
+
+@import "./utilidades/listas";
+
+/*Barra de navegación */
+nav{
+    
 }

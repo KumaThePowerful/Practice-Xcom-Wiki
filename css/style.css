@@ -1,5 +1,29 @@
-.clase {
-  background-color: red;
+@charset "UTF-8";
+/*Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/*Texto */
+.text-titillium {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.text-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-size-24 {
+  font-size: 24px;
+}
+
+.text-size {
+  font-size: 14px;
+}
+
+/*Barra de navegación */
 
 /*# sourceMappingURL=style.css.map */
