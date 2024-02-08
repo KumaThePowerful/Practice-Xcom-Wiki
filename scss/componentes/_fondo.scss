@@ -1,0 +1,26 @@
+.bg-centrado {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-gris {
+    background-color: $gris;
+}
+
+.bg-azul-oscuro {
+    background-color: $azul-oscuro;
+}
+
+.bg-negro {
+    background-color: $negro;
+}
+
+.bg-index {
+    background-image: url(nth($img-fondo, 1));
+}
+
+.bg-hologlobo {
+    background-image: url(nth($img-fondo, 2));
+}
+

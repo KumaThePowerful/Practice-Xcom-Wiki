@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/*GLOBAL*/
 /*Texto */
 .text-titillium {
   font-family: "Titillium Web", sans-serif;
@@ -24,6 +25,136 @@
   font-size: 14px;
 }
 
-/*Barra de navegación */
+.text-color-azul-claro {
+  color: #5AFBFD;
+}
+
+.text-color-blanco {
+  color: #DBFFFF;
+}
+
+/*Fondos*/
+.bg-centrado {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-gris {
+  background-color: #05111B;
+}
+
+.bg-azul-oscuro {
+  background-color: #072D4F;
+}
+
+.bg-negro {
+  background-color: #040204;
+}
+
+.bg-index {
+  background-image: url("../img/bg-index.jpg");
+}
+
+.bg-hologlobo {
+  background-image: url("../img/bg-hologlobo.jpg");
+}
+
+/*Bordes*/
+.border-azul-claro {
+  border: 2px solid #5AFBFD;
+}
+
+/*Tamaños*/
+.height-120 {
+  height: 120px;
+}
+
+.height-500 {
+  height: 500px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/*Body*/
+body p {
+  color: #DBFFFF;
+}
+
+/*ENEMIGOS*/
+.container-grid-enemigos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.2fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+.container-grid-enemigos .Titulo {
+  grid-area: 1/1/3/2;
+}
+.container-grid-enemigos .Fotos {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Anciano Enemigos";
+  grid-area: 2/1/3/2;
+}
+.container-grid-enemigos .Fotos .Anciano {
+  grid-area: Anciano;
+}
+.container-grid-enemigos .Fotos .Enemigos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Sectoide Comandante-sectoide Ciberdisco Muton" "Berserker Flotador Flotador-pesado Crisalida" "Crisalida-zombie Crisalida-neonata Hombre-delagado Soldado" "Sectopodo . . .";
+  grid-area: Enemigos;
+}
+.container-grid-enemigos .Fotos .Enemigos .Sectoide {
+  grid-area: Sectoide;
+}
+.container-grid-enemigos .Fotos .Enemigos .Comandante-sectoide {
+  grid-area: Comandante-sectoide;
+}
+.container-grid-enemigos .Fotos .Enemigos .Ciberdisco {
+  grid-area: Ciberdisco;
+}
+.container-grid-enemigos .Fotos .Enemigos .Muton {
+  grid-area: Muton;
+}
+.container-grid-enemigos .Fotos .Enemigos .Berserker {
+  grid-area: Berserker;
+}
+.container-grid-enemigos .Fotos .Enemigos .Flotador {
+  grid-area: Flotador;
+}
+.container-grid-enemigos .Fotos .Enemigos .Flotador-pesado {
+  grid-area: Flotador-pesado;
+}
+.container-grid-enemigos .Fotos .Enemigos .Crisalida {
+  grid-area: Crisalida;
+}
+.container-grid-enemigos .Fotos .Enemigos .Crisalida-zombie {
+  grid-area: Crisalida-zombie;
+}
+.container-grid-enemigos .Fotos .Enemigos .Crisalida-neonata {
+  grid-area: Crisalida-neonata;
+}
+.container-grid-enemigos .Fotos .Enemigos .Hombre-delagado {
+  grid-area: Hombre-delagado;
+}
+.container-grid-enemigos .Fotos .Enemigos .Soldado {
+  grid-area: Soldado;
+}
+.container-grid-enemigos .Fotos .Enemigos .Sectopodo {
+  grid-area: Sectopodo;
+}
 
 /*# sourceMappingURL=style.css.map */
