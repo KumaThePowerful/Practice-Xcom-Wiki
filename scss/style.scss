@@ -141,18 +141,15 @@ body {
 
 @media (max-width:767px) {
     .movil-flex {
-        flex-direction: column;
+        @include movil-flex;
     }
 
     .movil-wrap {
-        flex-wrap: wrap;
+        @include movil-wrap;
     }
 
     .movil-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        @include movil-center;
     }
 
     .movil-height- {

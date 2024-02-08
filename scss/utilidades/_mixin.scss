@@ -1,0 +1,13 @@
+@mixin movil-flex{
+    flex-direction: column;
+}
+
+@mixin movil-wrap{
+    flex-wrap: wrap;
+}
+
+@mixin movil-center{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
