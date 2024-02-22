@@ -12,6 +12,7 @@
 
 /*GLOBAL*/
 
+
 /*Texto */
 @import "./componentes/texto";
 
@@ -26,16 +27,30 @@
 
 /*Body*/
 body {
-    nav {}
+    nav {
+        .bg-gris {
+            .container-nav {
+                li {
+                    a {}
+                }
+            }
+        }
+    }
 
     main {
-        div {
-            div {
-                div {
-                    p {
-                        color: $blanco;
-                    }
-                }
+        .container-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container-main {
+                max-width: 1023px;
+                padding: 30px;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
             }
         }
     }

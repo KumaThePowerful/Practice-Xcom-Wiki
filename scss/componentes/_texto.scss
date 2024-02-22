@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap');
 
+//Fuentes
 .text-titillium {
     font-family: $Titillium, sans-serif;
 }
@@ -8,6 +9,7 @@
     font-family: $Roboto, sans-serif;
 }
 
+//Tamaño
 .text-size-24 {
     font-size: 24px;
 }
@@ -16,10 +18,17 @@
     font-size: 14px;
 }
 
+
+//Color
 .text-color-azul-claro {
     color: $azul-claro;
 }
 
 .text-color-blanco {
     color: $blanco;
+}
+
+//Decoración
+.text-nav-a{
+    text-decoration: none;
 }

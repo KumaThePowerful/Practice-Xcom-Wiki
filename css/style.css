@@ -33,6 +33,10 @@
   color: #DBFFFF;
 }
 
+.text-nav-a {
+  text-decoration: none;
+}
+
 /*Fondos*/
 .bg-centrado {
   background-position: center;
@@ -79,8 +83,20 @@
 }
 
 /*Body*/
-body main div div div p {
-  color: #DBFFFF;
+body main .container-flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container-flex-centered .container-main {
+  max-width: 1023px;
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*ENEMIGOS*/
@@ -169,8 +185,8 @@ body main div div div p {
     align-items: center;
     justify-content: center;
   }
-  .movil-height- {
-    height: 70px;
+  .movil-height-70 {
+    height: 50px;
   }
   .container-grid-enemigos {
     display: grid;
