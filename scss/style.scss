@@ -42,6 +42,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+
             .container-main {
                 max-width: 1023px;
                 padding: 30px;
@@ -51,6 +52,43 @@ body {
                 align-items: center;
                 margin-top: 30px;
                 margin-bottom: 30px;
+
+                img {}
+
+                h1 {
+                    display: none;
+                }
+
+                .parrafo {
+                    margin-top: 20px;
+
+                    .text-color-blanco {
+                        p {}
+                    }
+                }
+
+                .container-articulos{
+                    width: 100%;
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-around;
+                    img{}
+                    hr{}
+                    .container-flex-column{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h2{}
+                        ul{
+                            .list-item-colors{
+                                background-color: $gris;
+                                border: 2px solid $azul-claro;
+                                color: $blanco;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

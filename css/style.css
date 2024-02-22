@@ -98,6 +98,29 @@ body main .container-flex-centered .container-main {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+body main .container-flex-centered .container-main h1 {
+  display: none;
+}
+body main .container-flex-centered .container-main .parrafo {
+  margin-top: 20px;
+}
+body main .container-flex-centered .container-main .container-articulos {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+body main .container-flex-centered .container-main .container-articulos .container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .container-flex-centered .container-main .container-articulos .container-flex-column ul .list-item-colors {
+  background-color: #05111B;
+  border: 2px solid #5AFBFD;
+  color: #DBFFFF;
+}
 
 /*ENEMIGOS*/
 .container-grid-enemigos {
@@ -185,8 +208,8 @@ body main .container-flex-centered .container-main {
     align-items: center;
     justify-content: center;
   }
-  .movil-height-70 {
-    height: 50px;
+  .movil-height- {
+    height: 70px;
   }
   .container-grid-enemigos {
     display: grid;
