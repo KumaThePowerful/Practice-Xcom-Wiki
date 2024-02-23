@@ -53,93 +53,81 @@ body {
                 margin-top: 30px;
                 margin-bottom: 30px;
 
-                .grid-container {
+                .contenedor-grid {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                    gap: 0px 0px;
-                    grid-auto-flow: row;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 33% 33% 33%;
+                    grid-template-rows: 20% 20% 20% 20% 20%;
+                    gap: 5px;
                     grid-template-areas:
                         "berserker ciberdisco comandante"
                         "crisalida etereo flotador-p"
                         "flotador etereo hombre-d"
                         "muton etereo sectoide"
                         "sectopodo soldado zombie";
-                    width: 1003px;
-                    gap: 5px;
-                    margin: 10px;
-
-                    div {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            border-radius: 10px;
-                        }
-                    }
-
-                    .etereo {
-                        grid-area: etereo;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .berserker {
-                        grid-area: berserker;
-                    }
-
-                    .ciberdisco {
-                        grid-area: ciberdisco;
-                    }
-
-                    .comandante {
-                        grid-area: comandante;
-                    }
-
-                    .crisalida {
-                        grid-area: crisalida;
-                    }
-
-                    .flotador-p {
-                        grid-area: flotador-p;
-                    }
-
-                    .flotador {
-                        grid-area: flotador;
-                    }
-
-                    .hombre-d {
-                        grid-area: hombre-d;
-                    }
-
-                    .muton {
-                        grid-area: muton;
-                    }
-
-                    .sectoide {
-                        grid-area: sectoide;
-                    }
-
-                    .sectopodo {
-                        grid-area: sectopodo;
-                    }
-
-                    .soldado {
-                        grid-area: soldado;
-                    }
-
-                    .zombie {
-                        grid-area: zombie;
-                    }
+                    width: 1023px;
                 }
+
+                .etereo {
+                    grid-area: etereo;
+                }
+
+                .berserker {
+                    grid-area: berserker;
+                }
+
+                .ciberdisco {
+                    grid-area: ciberdisco;
+                }
+
+                .comandante {
+                    grid-area: comandante;
+                }
+
+                .crisalida {
+                    grid-area: crisalida;
+                }
+
+                .flotador-p {
+                    grid-area: flotador-p;
+                }
+
+                .flotador {
+                    grid-area: flotador;
+                }
+
+                .hombre-d {
+                    grid-area: hombre-d;
+                }
+
+                .muton {
+                    grid-area: muton;
+                }
+
+                .sectoide {
+                    grid-area: sectoide;
+                }
+
+                .sectopodo {
+                    grid-area: sectopodo;
+                }
+
+                .soldado {
+                    grid-area: soldado;
+                }
+
+                .zombie {
+                    grid-area: zombie;
+                }
+
 
                 img {}
 
-                .display-none{
+                .display-none {
                     display: none;
                 }
+
                 .parrafo {
                     margin-top: 20px;
 
@@ -178,220 +166,54 @@ body {
             }
         }
     }
-
 }
 
-
-/*ENEMIGOS*/
-/*
-.container-grid-enemigos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.2fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-
-    .Titulo {
-        grid-area: 1 / 1 / 3 / 2;
-    }
-
-    .Fotos {
-        display: grid;
-        grid-template-columns: 0.4fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "Anciano Enemigos";
-        grid-area: 2 / 1 / 3 / 2;
-
-        .Anciano {
-            grid-area: Anciano;
+@media (max-width:767px) {
+    body {
+        nav {
+            .bg-gris {
+                .movil-flex {
+                    flex-direction: column;
+                }
+            }
         }
 
-        .Enemigos {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "Sectoide Comandante-sectoide Ciberdisco Muton"
-                "Berserker Flotador Flotador-pesado Crisalida"
-                "Crisalida-zombie Crisalida-neonata Hombre-delagado Soldado"
-                "Sectopodo . . .";
-            grid-area: Enemigos;
+        main {
+            .container-main {
+                width: 767px;
 
-            .Sectoide {
-                grid-area: Sectoide;
-            }
+                .movil-wrap {
+                    flex-wrap: wrap;
+                }
 
-            .Comandante-sectoide {
-                grid-area: Comandante-sectoide;
-            }
 
-            .Ciberdisco {
-                grid-area: Ciberdisco;
-            }
+                .movil-width-100 {
+                    height: 100%;
+                }
 
-            .Muton {
-                grid-area: Muton;
-            }
-
-            .Berserker {
-                grid-area: Berserker;
-            }
-
-            .Flotador {
-                grid-area: Flotador;
-            }
-
-            .Flotador-pesado {
-                grid-area: Flotador-pesado;
-            }
-
-            .Crisalida {
-                grid-area: Crisalida;
-            }
-
-            .Crisalida-zombie {
-                grid-area: Crisalida-zombie;
-            }
-
-            .Crisalida-neonata {
-                grid-area: Crisalida-neonata;
-            }
-
-            .Hombre-delagado {
-                grid-area: Hombre-delagado;
-            }
-
-            .Soldado {
-                grid-area: Soldado;
-            }
-
-            .Sectopodo {
-                grid-area: Sectopodo;
+                .movil-flex {
+                    flex-direction: column;
+                }
             }
         }
     }
 }
 
 @media (max-width:767px) {
-    .movil-flex {
-        @include movil-flex;
-    }
-
-    .movil-wrap {
-        @include movil-wrap;
-    }
-
-    .movil-center {
-        @include movil-center;
-    }
-
-    .movil-height- {
-        height: 70px;
-    }
-
-    .container-grid-enemigos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1.7fr;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-
-        .Titulo {
-            grid-area: 1 / 1 / 3 / 2;
-        }
-
-        .Fotos {
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "Anciano Enemigos";
-            grid-area: 2 / 1 / 3 / 2;
-
-            .Anciano {
-                grid-area: Anciano;
-            }
-
-            .Enemigos {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                gap: 0px 0px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "Sectoide Comandante-sectoide"
-                    "Berserker Flotador"
-                    "Crisalida-zombie Crisalida-neonata"
-                    "Sectopodo Ciberdisco"
-                    "Muton Flotador-pesado"
-                    "Crisalida hombre-delgado"
-                    "Soldado .";
-                grid-area: Enemigos;
-
-                .Sectoide {
-                    grid-area: Sectoide;
-                }
-
-                .Comandante-sectoide {
-                    grid-area: Comandante-sectoide;
-                }
-
-                .Berserker {
-                    grid-area: Berserker;
-                }
-
-                .Flotador {
-                    grid-area: Flotador;
-                }
-
-                .Crisalida-zombie {
-                    grid-area: Crisalida-zombie;
-                }
-
-                .Crisalida-neonata {
-                    grid-area: Crisalida-neonata;
-                }
-
-                .Sectopodo {
-                    grid-area: Sectopodo;
-                }
-
-                .Ciberdisco {
-                    grid-area: Ciberdisco;
-                }
-
-                .Muton {
-                    grid-area: Muton;
-                }
-
-                .Flotador-pesado {
-                    grid-area: Flotador-pesado;
-                }
-
-                .Crisalida {
-                    grid-area: Crisalida;
-                }
-
-                .hombre-delgado {
-                    grid-area: hombre-delgado;
-                }
-
-                .Soldado {
-                    grid-area: Soldado;
+    body {
+        main {
+            .bg-index {
+                .container-main {
+                    .grid-movil {
+                        display: flex;
+                        flex-direction: column;
+                        img{
+                            height: 200px;
+                        }
+                    }
                 }
             }
         }
     }
+
 }
-*/
