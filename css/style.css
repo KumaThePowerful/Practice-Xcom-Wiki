@@ -106,7 +106,6 @@ body main .container-flex-centered .container-main .contenedor-grid {
   display: grid;
   align-items: center;
   justify-content: center;
-  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20% 20% 20% 20% 20%;
   gap: 5px;
