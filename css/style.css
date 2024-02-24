@@ -106,7 +106,8 @@ body main .container-flex-centered .container-main .contenedor-grid {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20% 20% 20% 20% 20%;
   gap: 5px;
   grid-template-areas: "berserker ciberdisco comandante" "crisalida etereo flotador-p" "flotador etereo hombre-d" "muton etereo sectoide" "sectopodo soldado zombie";
@@ -198,7 +199,7 @@ body main .container-flex-centered .container-main .container-articulos .contain
     flex-direction: column;
   }
   body main .bg-index .container-main .grid-movil img {
-    height: 200px;
+    height: 300px;
   }
 }
 
